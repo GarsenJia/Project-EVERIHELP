@@ -1,38 +1,47 @@
 var users = [];
 var paswrds = [];
 
-const submit = (ev)=>{
+function submit(){
+    window.alert("ok")
     var number = document.getElementById("usrname").value;
     var paswrd = document.getElementById("paswrd").value;
-    ev.preventDefault();
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var usrFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Users.txt", 1, true);
+    var psdFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Passwords.txt", 1, true);
+    while(!usrFile.AtEndOfStream){
+        users.push(usrFile.ReadLine());
+    }
+    while(!psdFile.AtEndOfStream){
+        paswrds.push(psdFile.ReadLine());
+    }
     if(!users.includes(number)){
-        users.push(number);
-        paswrds.push(paswrd);
-        document.forms[0].reset();
-        //console.warn('added', {users});
+        var usrWrt = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Users.txt", 8, true);
+        var psdWrt = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Passwords.txt", 8, true);
+        usrWrt.WriteLine(number);
+        psdWrt.WriteLine(paswrd);
         window.alert("已自动注册");
         window.alert("jump");
         //jump
         window.location.href="./Scratch.html";
-        const fs = require('fs')
-        let data = "Learning how to write in a file."
-        fs.writeFile('./Users.txt', data, (err) => {
-            if (err) throw err;})
     }else{
         index = users.indexOf(number);
         if(paswrds[index] == paswrd){
             window.location.href="./Scratch.html";
             window.alert("jump");
         }else{
-            window.alert("用户名或密码错误");
+            document.getElementById("paswrd").innerHTML="";
+            window.alert("密码错误");
         }
     }
 
 }
 
+/*
 document.addEventListener('DOMContentLoaded', ()=>{
     document.getElementById('btn').addEventListener('click', submit);
 })
+ */
+
 
 function validNumber(){
     var number = document.getElementById("usrname").value;
