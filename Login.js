@@ -1,36 +1,32 @@
 var users = [];
 var paswrds = [];
 
-function li(){
-    var number = document.
 
-    getElementById("number").value;
+
+const submit = (ev)=>{
+    var number = document.getElementById("usrname").value;
     var paswrd = document.getElementById("paswrd").value;
-    var info = number + "," + paswrd + "\n";
-    window.alert(users.length);
-    window.alert(paswrds.length);
-    users.push(number);
-    paswrds.push(paswrd)
-    window.alert(users.length);
-    window.alert(paswrds.length);
-    window.alert(users[0]);
-    var txtFile = "./Users.txt";
-    var file = new File(txtFile);
-    var str = "My string of text";
-
-    file.open("w"); // open file with write access
-    file.writeln("First line of text");
-    file.writeln("Second line of text " + str);
-    file.write(str);
-    file.close();
-}
-
-function validusr(){
-    var number = document.getElementById("number").value;
-    //window.alert(users.includes(number));
-    if(users.includes(number)){
-        window.alert("exist");
+    ev.preventDefault();
+    if(!users.includes(number)){
+        users.push(number);
+        paswrds.push(paswrd);
+        document.forms[0].reset();
+        //console.warn('added', {users});
+        window.alert("已自动注册");
+        //jump to page #2
+        window.alert("jump");
     }else{
-        li();
+        index = users.indexOf(number);
+        if(paswrds[index] == paswrd){
+            //jump to page #2
+            window.alert("jump");
+        }else{
+            window.alert("用户名或密码错误");
+        }
     }
 }
+document.addEventListener('DOMContentLoaded', ()=>{
+    document.getElementById('btn').addEventListener('click', submit);
+})
+
+
