@@ -1,7 +1,7 @@
 var users = [];
 var paswrds = [];
 
-function submit(){
+function ie9(){
     window.alert("ok")
     var number = document.getElementById("usrname").value;
     var paswrd = document.getElementById("paswrd").value;
@@ -14,7 +14,12 @@ function submit(){
     while(!psdFile.AtEndOfStream){
         paswrds.push(psdFile.ReadLine());
     }
+    usrFile.close();
+    psdFile.close();
+    window.alert(number);
+    window.alert(users.includes(number));
     if(!users.includes(number)){
+        window.alert("wrinting");
         var usrWrt = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Users.txt", 8, true);
         var psdWrt = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Passwords.txt", 8, true);
         usrWrt.WriteLine(number);
@@ -23,6 +28,8 @@ function submit(){
         window.alert("jump");
         //jump
         window.location.href="./Scratch.html";
+        usrWrt.close();
+        paswrd.close();
     }else{
         index = users.indexOf(number);
         if(paswrds[index] == paswrd){
