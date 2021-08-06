@@ -9,15 +9,18 @@ function ie9(){
     var usrFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Users.txt", 1, true);
     var psdFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Passwords.txt", 1, true);
     while(!usrFile.AtEndOfStream){
+        window.alert("yup");
         users.push(usrFile.ReadLine());
     }
     while(!psdFile.AtEndOfStream){
+        window.alert("yup");
         paswrds.push(psdFile.ReadLine());
     }
-    usrFile.close();
-    psdFile.close();
+    //usrFile.close();
+    //psdFile.close();
     window.alert(number);
-    window.alert(users.includes(number));
+    window.alert(users);
+    console.warn(users.includes(number));
     if(!users.includes(number)){
         window.alert("wrinting");
         var usrWrt = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Users.txt", 8, true);
@@ -53,7 +56,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 function validNumber(){
     var number = document.getElementById("usrname").value;
     var pattern = /^\d{11}$/;
-    if(!pattern.test(number) || numer == "" || number == undefined){
+    if(!pattern.test(number) || number == "" || number == undefined){
         window.alert("请输入有效手机号")
     }
 }
