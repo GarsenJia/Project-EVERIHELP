@@ -10,10 +10,24 @@
 <div id="login">
     <h1>开启互助</h1>
     <form method="post">
-        <input id="usrname" type="text" required="required" placeholder="手机号"></input>
+        <input id="usrname" type="text" required="required" placeholder="手机号" onblur="validNumber()"></input>
         <input id="paswrd" type="password" required="required" placeholder="密码"></input>
         <button id="btn" class="btn" type="submit">登录</button>
     </form>
 </div>
+<script>
+    const fsLibrary  = require('fs')
+
+    // Data which will need to add in a file.
+    let data = "Hello world."
+
+    // Write data in 'newfile.txt' .
+    fsLibrary.writeFile('F:/CSC/Github/Unihack2021--33/Users.txt', data, (error) => {
+
+        // In case of a error throw err exception.
+        if (error) throw err;
+    })
+
+</script>
 </body>
 </html>
