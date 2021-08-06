@@ -36,7 +36,7 @@ input{
     outline: none;
     padding: 10px;
     font-size: 13px;
-    color: #fff;
+    color: #000000;
     border-top: 1px solid #312E3D;
     border-left: 1px solid #312E3D;
     border-right: 1px solid #312E3D;
@@ -44,7 +44,7 @@ input{
     border-radius: 10px;
     background-color: #fff;
 }
-.but{
+.btn{
     width: 300px;
     min-height: 20px;
     display: block;
