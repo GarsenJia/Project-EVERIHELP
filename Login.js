@@ -34,7 +34,7 @@ function ie9(){
         psdWrt.WriteLine(paswrd);
         window.alert("已自动注册");
         window.alert("jump");
-        window.location.href="Scratch.html";
+        window.location.href="/Scratch.html";
         usrWrt.Close();
         paswrd.Close();
         window.alert("jump complete");
@@ -42,7 +42,7 @@ function ie9(){
         index = usernames.indexOf(number);
         if(paswrds[index] == paswrd){
             window.alert("jump");
-            window.location.href="Scratch.html";
+            window.location.href="/Scratch.html";
             window.alert("jump complete");
         }else{
             document.getElementById("paswrd").innerHTML="";
