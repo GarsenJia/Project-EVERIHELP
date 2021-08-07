@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Request</title>
+    <style>
+        .Content-Main{
+            max-width: 500px;
+            margin: auto;
+            border: none;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-shadow: 1px 1px 1px #CDC0B0;
+            color: #363636;
+            background: #fffaf0;
+        }
+        .Content-Main h1{
+            padding: 8px 0px 40px 10px;
+            display: block;
+            border-bottom: 1px solid #444;
+        }
+        .Content-Main label{
+            margin: 0px 0px 5px;
+            display: block;
+        }
+        .Content-Main label>span{
+            width: 20%;
+            float: left;
+            text-align: right;
+            padding-right: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .Content-Main .button{
+            padding: 8px 24px 8px 24px;
+            margin-bottom: 8px;
+            margin-left: 205px;
+            border: none;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            font-weight: bold;
+            background-color: #668b8b;
+            border: 1px solid #668b8b;
+            color: #fff;
+        }
+        .Content-Main .button:hover{
+            color:  #333;
+            background-color:  #EBEBEB ;
+        }
+        header {
+            background-color: #668b8b;
+            padding: 10px;
+            text-align: center;
+            font-size: 10px;
+            color: #fffaf0;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="Post.html" target="_blank">发布求助</a>
+    <a href="InfoList.html">求助信息</a>
+    <a href="Homepage.html">个人主页</a>
+</header>
+
+<h3 align="center">我的求助</h3>
+
+<div class="Content-Main">
+    <form  action="" method="post" class="form-userInfo">
+        <p>
+            <span id="requesttype01">求助类型:</span>
+            <br>
+            <span id="requestway01">交货方式:</span>
+            <br>
+            <span id="requestdesc01">具体描述:</span>
+            <br>
+            <input type="text" required="required" placeholder="四位验证码" name="u">
+            <br>
+            <input type="submit" class="button" value="完成">
+    </form>
+</div>
+
+<div class="Content-Main">
+    <form  action="" method="post" class="form-userInfo">
+        <p>
+            <span id="requesttype02">求助类型:</span>
+            <br>
+            <span id="requestway02">交货方式:</span>
+            <br>
+            <span id="requestdesc02">具体描述:</span>
+            <br>
+            <input type="text" required="required" placeholder="四位验证码" name="u"></input>
+            <br>
+            <input type="submit" class="button" value="完成">
+    </form>
+</div>
+<div class="Content-Main">
+    <form  action="" method="post" class="form-userInfo" align="center">
+        <input type="submit"  value="上一页">
+        <input type="submit"  value="下一页">
+    </form>
+</div>
+</body>
+</html>

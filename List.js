@@ -1,4 +1,4 @@
-var lats = []
+var lats = [];
 var lnts = [];
 var pickup = [];
 var service = [];
@@ -256,4 +256,3 @@ document.addEventListener('DOMContentLoaded', ()=>{
 /*
 on click(accept)
  */
-

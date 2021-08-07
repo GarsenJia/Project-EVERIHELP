@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>求助信息</title>
+    <style type="text/css">
+        .Content-Main{
+            max-width: 500px;
+            margin: auto;
+            border: none;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-shadow: 1px 1px 1px #CDC0B0;
+            color: #363636;
+            background: #fffaf0;
+        }
+        .Content-Main h1{
+            padding: 8px 0px 40px 10px;
+            display: block;
+            border-bottom: 1px solid #444;
+        }
+        .Content-Main label{
+            margin: 0px 0px 5px;
+            display: block;
+        }
+        .Content-Main label>span{
+            width: 20%;
+            float: left;
+            text-align: right;
+            padding-right: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .Content-Main .button{
+            padding: 8px 24px 8px 24px;
+            margin-bottom: 8px;
+            margin-left: 205px;
+            border: none;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            font-weight: bold;
+            background-color: #668b8b;
+            border: 1px solid #668b8b;
+            color: #fff;
+        }
+        .Content-Main .button:hover{
+            color:  #333;
+            background-color:  #EBEBEB ;
+        }
+        .Content-Main .endbutton{
+            padding: 8px 24px 8px 24px;
+            margin-bottom: 8px;
+            margin-left: 205px;
+            border: none;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            font-weight: bold;
+            background-color: #668b8b;
+            border: 1px solid #668b8b;
+            color: #fff;
+        }
+        .Content-Main .endbutton:hover{
+            color:  #333;
+            background-color:  #EBEBEB ;
+        }
+        .Main-box {
+            padding-right: 130px;
+            padding-bottom: 13px;
+            font-weight: bold;
+            line-height: 2px;
+        }
+        header {
+            background-color: #668b8b;
+            padding: 10px;
+            text-align: center;
+            font-size: 10px;
+            color: #fffaf0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="Post.html" target="_blank">发布求助</a>
+    <a href="InfoList.html">求助信息</a>
+    <a href="Homepage.html">个人主页</a>
+</header>
+
+<div class="Content-Main">
+    <form action="" method="post" class="form-userInfo">
+        <p>
+        <label class="Main-box" >
+            <span>筛选条件:</span>
+            <select id="type" name="type">
+                <option value="service">无</option>
+                <option value="object">离我最近</option>
+            </select>
+        </label>
+        <!-- /p -->
+    </form>
+</div>
+
+<div class="Content-Main">
+        <form  action="" method="post" class="form-userInfo">
+        <p>
+        <span id="name01">求助人姓名:</span>
+            <br>
+        <span id="address01">联系方式:</span>
+            <br>
+        <span id="type01">求助类型:</span>
+            <br>
+        <span id="way01">交货方式:</span>
+            <br>
+        <span id="desc01">具体描述:</span>
+            <br>
+        <input type="submit" class="button" value="接单">
+    </form>
+</div>
+<div class="Content-Main">
+    <form  action="" method="post" class="form-userInfo">
+        <p>
+            <span id="name02">求助人姓名:</span>
+            <br>
+            <span id="address02">联系方式:</span>
+            <br>
+            <span id="type02">求助类型:</span>
+            <br>
+            <span id="way02">交货方式:</span>
+            <br>
+            <span id="desc02">具体描述:</span>
+            <br>
+            <input type="submit" class="button" value="接单">
+    </form>
+</div>
+<div class="Content-Main">
+    <form  action="" method="post" class="form-userInfo">
+        <p>
+            <span id="name03">求助人姓名:</span>
+            <br>
+            <span id="address03">联系方式:</span>
+            <br>
+            <span id="type03">求助类型:</span>
+            <br>
+            <span id="way03">交货方式:</span>
+            <br>
+            <span id="desc03">具体描述:</span>
+            <br>
+            <input type="submit" class="button" value="接单">
+    </form>
+</div>
+<div class="Content-Main">
+    <form  action="" method="post" class="form-userInfo">
+        <p>
+            <span id="name04">求助人姓名:</span>
+            <br>
+            <span id="address04">联系方式:</span>
+            <br>
+            <span id="type04">求助类型:</span>
+            <br>
+            <span id="way04">交货方式:</span>
+            <br>
+            <span id="desc04">具体描述:</span>
+            <br>
+            <input type="submit" class="button" value="接单">
+    </form>
+</div>
+<div class="Content-Main">
+    <form  action="" method="post" class="form-userInfo">
+        <p>
+            <span id="name05">求助人姓名:</span>
+            <br>
+            <span id="address05">联系方式:</span>
+            <br>
+            <span id="type05">求助类型:</span>
+            <br>
+            <span id="way05">交货方式:</span>
+            <br>
+            <span id="desc05">具体描述:</span>
+            <br>
+            <input type="submit" class="button" value="接单" >
+    </form>
+</div>
+<div class="Content-Main">
+    <form  action="" method="post" class="form-userInfo" align="right">
+        <input type="submit"  value="上一页">
+        <input type="submit"  value="下一页">
+        <button id="prev">上一页</button>
+        <button id="next">下一页</button>
+    </form>
+</div>
+
+</body>
+</html>
