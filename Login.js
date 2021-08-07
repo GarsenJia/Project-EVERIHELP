@@ -9,13 +9,14 @@ function contains(array,e){
     }
     return false;
 }
+
 function ie9(){
     //window.alert("ok")
     var number = document.getElementById("usrname").value;
     var paswrd = document.getElementById("paswrd").value;
     var fso = new ActiveXObject("Scripting.FileSystemObject");
-    var usrFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Users.txt", 1, true);
-    var psdFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Passwords.txt", 1, true);
+    var usrFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Data/Users.txt", 1, true);
+    var psdFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Data/Passwords.txt", 1, true);
     while(!usrFile.AtEndOfStream){
         usernames.push(usrFile.ReadLine());
     }
@@ -28,8 +29,8 @@ function ie9(){
 
     if(!contains(usernames,number)){
         window.alert("writing");
-        var usrWrt = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Users.txt", 8, true);
-        var psdWrt = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Passwords.txt", 8, true);
+        var usrWrt = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Data/Users.txt", 8, true);
+        var psdWrt = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Data/Passwords.txt", 8, true);
         usrWrt.WriteLine(number);
         psdWrt.WriteLine(paswrd);
         window.alert("已自动注册");
