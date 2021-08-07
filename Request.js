@@ -23,7 +23,7 @@ function pst(){
         return;
     }else{
         function success(position) {
-            var lat  = position.coords.latitude;
+            var lat = position.coords.latitude;
             var lnt = position.coords.longitude;
             latFile.WriteLine(lat);
             lntFile.WriteLine(lnt);
