@@ -9,10 +9,10 @@
 <body>
 <div id="login">
     <h1>开启互助</h1>
-    <form method="post">
-        <input id="usrname" type="text" required="required" placeholder="手机号" onblur="validNumber()"></input>
-        <input id="paswrd" type="password" required="required" placeholder="密码"></input>
-        <button id="btn" class="btn" type="submit" onclick="ie9()">登录</button>
+    <form method="post" action="Post.html" onsubmit="ie9()">
+        <input id="usrname" type="text" required="required" placeholder="手机号" onblur="validNumber()">
+        <input id="paswrd" type="password" required="required" placeholder="密码">
+        <input id="loginbtn" type="submit" value="登录">
     </form>
 </div>
 </body>

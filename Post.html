@@ -99,16 +99,16 @@
 </header>
 
 <div class="Content-Main">
-    <form  action="" method="post" class="form-userInfo">
+    <form  action="InfoList.html" method="post" class="form-userInfo" onsubmit="pst()">
         <h1>发布求助</h1>
         <span class="text1">请在文本框中完善您的个人信息：</span>
         <p>
         <label>
-            <span>求助人姓名:</span>
-            <input type="text"  name="name" placeholder="姓名">
+            <span>姓名:</span>
+            <input type="text"  name="name" placeholder="姓名" id="name">
         </label>
         <label>
-            <span>联系方式:</span>
+            <span>手机号:</span>
             <input type="text"  name="number" placeholder="请输入您的手机号" id="id">
         </label>
         <label>
@@ -128,10 +128,10 @@
         </label>
         <p>
         <label class="Main-box">
-            <span>交货方式:</span>
+            <span>求助方式:</span>
             <select id="pickup" name="way">
                 <option value="pickup">自取</option>
-                <option value="deliver">送达</option>
+                <option value="deliver">递送</option>
             </select>
         </label>
         <p>
@@ -140,7 +140,7 @@
             <textarea id="description" name="message" placeholder="请输入您的具体需求"></textarea>
         </label>
         <label class = "submitbutton">
-            <button type="button" class="button" onclick="pst()" >提交</button>
+            <input type="submit" value="提交">
         </label>
     </form>
 </div>

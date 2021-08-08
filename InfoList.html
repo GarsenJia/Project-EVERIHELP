@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>求助信息</title>
+    <script src="InfoList.js"></script>
     <style type="text/css">
         .Content-Main{
             max-width: 500px;
@@ -95,102 +96,115 @@
         <label class="Main-box" >
             <span>筛选条件:</span>
             <select id="type" name="type">
-                <option value="service">无</option>
+                <option value="service">最早发布</option>
                 <option value="object">离我最近</option>
             </select>
         </label>
         <!-- /p -->
     </form>
 </div>
-
 <div class="Content-Main">
-        <form  action="" method="post" class="form-userInfo">
+    <form action="personal_offer.html" method="post" class="form-userInfo" onsubmit="acceptTask0()">
         <p>
-        <span id="name01">求助人姓名:</span>
+        <span>求助人姓名:</span><span id="name00"></span>
             <br>
-        <span id="address01">联系方式:</span>
+        <span>联系方式:</span><span id="id00"></span>
             <br>
-        <span id="type01">求助类型:</span>
+        <span>求助类型:</span><span id="service00"></span>
             <br>
-        <span id="way01">交货方式:</span>
+        <span>求助方式:</span><span id="pick00"></span>
             <br>
-        <span id="desc01">具体描述:</span>
+        <span>具体描述:</span><span id="Des00"></span>
             <br>
+        <span>发布时间:</span><span id="time00"></span>
+            <br>
+        <span>发布位置:</span><span id="cord00"></span>
         <input type="submit" class="button" value="接单">
     </form>
 </div>
 <div class="Content-Main">
-    <form  action="" method="post" class="form-userInfo">
+    <form action="personal_offer.html" method="post" class="form-userInfo" onsubmit="acceptTask1()">
         <p>
-            <span id="name02">求助人姓名:</span>
+            <span>求助人姓名:</span><span id="name01"></span>
             <br>
-            <span id="address02">联系方式:</span>
+            <span>联系方式:</span><span id="id01"></span>
             <br>
-            <span id="type02">求助类型:</span>
+            <span>求助类型:</span><span id="service01"></span>
             <br>
-            <span id="way02">交货方式:</span>
+            <span>求助方式:</span><span id="pick01"></span>
             <br>
-            <span id="desc02">具体描述:</span>
+            <span>具体描述:</span><span id="Des01"></span>
             <br>
+            <span>发布时间:</span><span id="time01"></span>
+            <br>
+            <span>发布位置:</span><span id="cord01"></span>
             <input type="submit" class="button" value="接单">
     </form>
 </div>
 <div class="Content-Main">
-    <form  action="" method="post" class="form-userInfo">
+    <form action="personal_offer.html" method="post" class="form-userInfo" onsubmit="acceptTask2()">
         <p>
-            <span id="name03">求助人姓名:</span>
+            <span>求助人姓名:</span><span id="name02"></span>
             <br>
-            <span id="address03">联系方式:</span>
+            <span>联系方式:</span><span id="id02"></span>
             <br>
-            <span id="type03">求助类型:</span>
+            <span>求助类型:</span><span id="service02"></span>
             <br>
-            <span id="way03">交货方式:</span>
+            <span>求助方式:</span><span id="pick02"></span>
             <br>
-            <span id="desc03">具体描述:</span>
+            <span>具体描述:</span><span id="Des02"></span>
             <br>
+            <span>发布时间:</span><span id="time02"></span>
+            <br>
+            <span>发布位置:</span><span id="cord02"></span>
             <input type="submit" class="button" value="接单">
     </form>
 </div>
 <div class="Content-Main">
-    <form  action="" method="post" class="form-userInfo">
+    <form action="personal_offer.html" method="post" class="form-userInfo" onsubmit="acceptTask3()">
         <p>
-            <span id="name04">求助人姓名:</span>
+            <span>求助人姓名:</span><span id="name03"></span>
             <br>
-            <span id="address04">联系方式:</span>
+            <span>联系方式:</span><span id="id03"></span>
             <br>
-            <span id="type04">求助类型:</span>
+            <span>求助类型:</span><span id="service03"></span>
             <br>
-            <span id="way04">交货方式:</span>
+            <span>求助方式:</span><span id="pick03"></span>
             <br>
-            <span id="desc04">具体描述:</span>
+            <span>具体描述:</span><span id="Des03"></span>
             <br>
+            <span>发布时间:</span><span id="time03"></span>
+            <br>
+            <span>发布位置:</span><span id="cord03"></span>
             <input type="submit" class="button" value="接单">
     </form>
 </div>
 <div class="Content-Main">
-    <form  action="" method="post" class="form-userInfo">
+    <form action="personal_offer.html" method="post" class="form-userInfo" onsubmit="acceptTask4()">
         <p>
-            <span id="name05">求助人姓名:</span>
+            <span>求助人姓名:</span><span id="name04"></span>
             <br>
-            <span id="address05">联系方式:</span>
+            <span>联系方式:</span><span id="id04"></span>
             <br>
-            <span id="type05">求助类型:</span>
+            <span>求助类型:</span><span id="service04"></span>
             <br>
-            <span id="way05">交货方式:</span>
+            <span>求助方式:</span><span id="pick04"></span>
             <br>
-            <span id="desc05">具体描述:</span>
+            <span>具体描述:</span><span id="Des04"></span>
             <br>
-            <input type="submit" class="button" value="接单" >
+            <span>发布时间:</span><span id="time04"></span>
+            <br>
+            <span>发布位置:</span><span id="cord04"></span>
+            <input type="submit" class="button" value="接单">
     </form>
 </div>
 <div class="Content-Main">
-    <form  action="" method="post" class="form-userInfo" align="right">
-        <input type="submit"  value="上一页">
-        <input type="submit"  value="下一页">
-        <button id="prev">上一页</button>
-        <button id="next">下一页</button>
-    </form>
+    <!--button onclick="infoLoad()">加载</button-->
+    <button id="prev" onclick="prevPg()">上一页</button>
+    <button id="next" onclick="nextPg()">下一页</button>
 </div>
-
+<script>
+    infoLoad();
+</script>
 </body>
 </html>

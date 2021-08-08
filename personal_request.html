@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Request</title>
+    <script src="personal.js"></script>
     <style>
         .Content-Main{
             max-width: 500px;
@@ -73,13 +74,11 @@
 <div class="Content-Main">
     <form  action="" method="post" class="form-userInfo">
         <p>
-            <span id="requesttype01">求助类型:</span>
+            <span>求助类型:</span><span id="requesttype01"></span>
             <br>
-            <span id="requestway01">交货方式:</span>
+            <span>交货方式:</span><span id="requestway01"></span>
             <br>
-            <span id="requestdesc01">具体描述:</span>
-            <br>
-            <input type="text" required="required" placeholder="四位验证码" name="u">
+            <span>具体描述:</span><span id="requestdesc01"></span>
             <br>
             <input type="submit" class="button" value="完成">
     </form>
@@ -88,13 +87,11 @@
 <div class="Content-Main">
     <form  action="" method="post" class="form-userInfo">
         <p>
-            <span id="requesttype02">求助类型:</span>
+            <span>求助类型:</span><span id="requesttype02"></span>
             <br>
-            <span id="requestway02">交货方式:</span>
+            <span>交货方式:</span><span id="requestway02"></span>
             <br>
-            <span id="requestdesc02">具体描述:</span>
-            <br>
-            <input type="text" required="required" placeholder="四位验证码" name="u"></input>
+            <span>具体描述:</span><span id="requestdesc02"></span>
             <br>
             <input type="submit" class="button" value="完成">
     </form>
@@ -105,5 +102,6 @@
         <input type="submit"  value="下一页">
     </form>
 </div>
+<script>showQuest()</script>
 </body>
 </html>
