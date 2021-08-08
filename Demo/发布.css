@@ -1,0 +1,106 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 712px;
+}
+
+.u-section-1 .u-text-1 {
+  font-family: "Noto Sans HK";
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 29px auto 0;
+}
+
+.u-section-1 .u-form-1 {
+  width: 570px;
+  background-image: none;
+  margin: 26px auto 40px;
+}
+
+.u-section-1 .u-input-1 {
+  font-family: "Noto Sans HK";
+}
+
+.u-section-1 .u-form-group-2 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-input-2 {
+  font-family: "Noto Sans HK";
+}
+
+.u-section-1 .u-form-group-3 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-input-3 {
+  font-family: "Noto Sans HK";
+}
+
+.u-section-1 .u-form-group-4 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-input-4 {
+  font-family: "Noto Sans HK";
+}
+
+.u-section-1 .u-form-group-5 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-input-5 {
+  font-family: "Noto Sans HK";
+}
+
+.u-section-1 .u-form-group-6 {
+  margin-top: 20px;
+}
+
+.u-section-1 .u-input-6 {
+  font-family: "Noto Sans HK";
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-form-group-5 {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-form-1 {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-form-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-form-group-1 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-2 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-3 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-4 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-5 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-6 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-7 {
+    width: 100%;
+  }
+}

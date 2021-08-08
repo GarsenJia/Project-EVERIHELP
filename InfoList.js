@@ -8,7 +8,6 @@ var times = [];
 var index = 5;
 var names = [];
 
-
 function infoLoad(){
     var fso = new ActiveXObject("Scripting.FileSystemObject");
     var latFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Data/Latitudes.txt", 1, true);
@@ -103,7 +102,6 @@ function acceptTask0(){
 
 }
 
-
 function acceptTask1(){
     var fso = new ActiveXObject("Scripting.FileSystemObject");
     var proFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Data/proFileOffer.txt", 8, true);
@@ -118,7 +116,6 @@ function acceptTask1(){
 
 }
 
-
 function acceptTask2(){
     var fso = new ActiveXObject("Scripting.FileSystemObject");
     var proFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Data/proFileOffer.txt", 8, true);
@@ -130,7 +127,6 @@ function acceptTask2(){
         + document.getElementById("time02").textContent+";"
         + document.getElementById("cord02").textContent+";";
     proFile.WriteLine(taskInfo);
-
 }
 
 function acceptTask3(){
@@ -144,7 +140,6 @@ function acceptTask3(){
         + document.getElementById("time03").textContent+";"
         + document.getElementById("cord03").textContent+";";
     proFile.WriteLine(taskInfo);
-
 }
 
 function acceptTask4() {
@@ -160,10 +155,8 @@ function acceptTask4() {
     proFile.WriteLine(taskInfo);
 }
 
-
-
 /*
-
+No longer in use
 const nextPg = (ev)=>{
     ev.preventDefault();
 

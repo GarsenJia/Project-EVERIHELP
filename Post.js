@@ -9,7 +9,6 @@ var name = [];
 var status = [];
 
 function pst(){
-    //window.alert("0");
     console.warn("0");
 
     var fso = new ActiveXObject("Scripting.FileSystemObject");
@@ -23,7 +22,6 @@ function pst(){
     var nameFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Data/Names.txt", 8, true);
     var statusFile = fso.OpenTextFile("F:/CSC/Github/Unihack2021--33/Data/Status.txt", 8, true);
 
-
     var pick = document.getElementById("pickup").value;
     var des = document.getElementById("description").value;
     var id = document.getElementById("id").value;
@@ -33,7 +31,6 @@ function pst(){
     var name = document.getElementById("name").value;
     var time = Date.parse(new Date());
 
-    //window.alert("3");
     latFile.WriteLine(lat);
     lntFile.WriteLine(lnt);
     puFile.WriteLine(pick);
